@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>경주시 행정구역 경계 지도</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="map"></div>
+
+  <div class="zoom-controls">
+    <button id="zoom-out-btn" type="button" aria-label="지도 축소">-</button>
+    <input id="zoom-slider" type="range" aria-label="지도 줌 레벨" />
+    <button id="zoom-in-btn" type="button" aria-label="지도 확대">+</button>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/poi-data.js"></script>
+  <script src="js/geo-utils.js"></script>
+  <script src="js/map-app.js"></script>
+</body>
+</html>

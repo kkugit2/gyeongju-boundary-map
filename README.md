@@ -61,9 +61,13 @@ npm test
 
 ## 배포
 
-- GitHub Pages를 통한 정적 사이트 배포를 목표로 합니다.
-- 배포 워크플로: `.github/workflows/deploy.yml` (main 브랜치 push 시 저장소 루트를 정적 사이트로 배포)
-- 배포 상태: 미배포 (저장소 생성 및 GitHub Pages 활성화 대기 중)
+- 저장소: https://github.com/kkugit2/gyeongju-boundary-map (public)
+- GitHub Pages 배포 URL: https://kkugit2.github.io/gyeongju-boundary-map/
+- 배포 워크플로: `.github/workflows/deploy.yml` (main 브랜치 push 시 `node --test` 실행 후 저장소 루트를
+  정적 사이트로 빌드/배포)
+- 배포 상태: 배포 완료 (GitHub Actions 워크플로 실행 성공, 사이트 정상 응답(HTTP 200) 확인됨)
+- 지도가 정상 표시되려면 카카오 디벨로퍼스 콘솔에 `kkugit2.github.io` 도메인이 서비스 도메인으로
+  등록되어 있어야 합니다 (사용자가 콘솔에서 별도 확인 필요).
 
 ## 수정된 부분
 
